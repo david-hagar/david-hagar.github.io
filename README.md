@@ -1,6 +1,4 @@
----
-title: Document Center
----
+
 
 david-hagar.github.io
 ====================
