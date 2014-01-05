@@ -35,6 +35,7 @@
 
 [![Feedback]( images/cracks.png )](https://github.com/david-hagar/Cracks)
 
+<br>
 
 ---
 
@@ -51,7 +52,7 @@
 
 [![Hex]( images/hex.png )](https://github.com/david-hagar/Venn-Layout)
 
-
+<br>
 
 
 ---
@@ -60,10 +61,13 @@
 ##[Fractal Shape Maker](https://github.com/david-hagar/Fractal-Shape-Maker) - create recursive fractals from some shapes
 <br>
 
-[![Hex]( images/fsm.png )](https://github.com/david-hagar/Venn-Layout)
+[![Hex]( images/fsm.png )](https://github.com/david-hagar/Fractal-Shape-Maker)
 
 
-
+<br>
+<br>
+<br>
+<br>
 
 
 
