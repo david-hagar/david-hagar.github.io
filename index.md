@@ -66,6 +66,23 @@
 
 <br>
 <br>
+
+
+
+
+---
+
+<br>
+##[Graph Placement](https://github.com/david-hagar/Graph-Placement) - lays out an arbitrary graph
+<br>
+
+[![Hex]( images/graph-placement.png )](https://github.com/david-hagar/Graph-Placement)
+
+
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
