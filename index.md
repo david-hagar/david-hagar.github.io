@@ -81,6 +81,19 @@
 
 <br>
 <br>
+
+
+---
+
+<br>
+##[Grid Fractals](https://github.com/david-hagar/Grid-Fractals) - random fractal texture generator
+<br>
+
+[![Hex]( images/grid-fractal.png )](https://github.com/david-hagar/Grid-Fractals)
+
+
+<br>
+<br>
 <br>
 <br>
 <br>
