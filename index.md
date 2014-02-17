@@ -94,6 +94,17 @@
 
 <br>
 <br>
+---
+
+<br>
+##[Evolving Text](https://github.com/david-hagar/Evolving-Text) - guesses a arbitrary string
+<br>
+
+[![Hex]( images/evolText.png )](https://github.com/david-hagar/Evolving-Text)
+
+
+<br>
+<br>
 <br>
 <br>
 <br>
