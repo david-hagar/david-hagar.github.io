@@ -50,7 +50,7 @@
 ##[Hex Grid Permute](https://github.com/david-hagar/Hex-Grid-Permute) - creates permutations of adjacent hexagons
 <br>
 
-[![Hex]( images/hex.png )](https://github.com/david-hagar/Venn-Layout)
+[![Hex]( images/hex.png )](https://github.com/david-hagar/Hex-Grid-Permute)
 
 <br>
 
