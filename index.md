@@ -105,6 +105,17 @@
 
 <br>
 <br>
+---
+
+<br>
+##[Cube Dots](https://github.com/david-hagar/CubeDots) - Renders alignment patterns in a 3D grid of dots
+<br>
+
+[![Hex]( images/cube-dots.png)](https://github.com/david-hagar/CubeDots)
+
+
+<br>
+<br>
 <br>
 <br>
 <br>
