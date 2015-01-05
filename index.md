@@ -50,7 +50,7 @@
 ##[Hex Grid Permute](https://github.com/david-hagar/Hex-Grid-Permute) - creates permutations of adjacent hexagons
 <br>
 
-[![Hex]( images/hex.png )](https://github.com/david-hagar/Hex-Grid-Permute)
+[![Hex]( images/hex.png )](https://github.com/david-hagar/Venn-Layout)
 
 <br>
 
@@ -97,7 +97,7 @@
 ---
 
 <br>
-##[Evolving Text](https://github.com/david-hagar/Evolving-Text) - guesses a arbitrary string
+## [Evolving Text](https://github.com/david-hagar/Evolving-Text) - guesses a arbitrary string
 <br>
 
 [![Hex]( images/evolText.png )](https://github.com/david-hagar/Evolving-Text)
@@ -108,7 +108,7 @@
 ---
 
 <br>
-##[Cube Dots](https://github.com/david-hagar/CubeDots) - Renders alignment patterns in a 3D grid of dots
+## [Cube Dots](https://github.com/david-hagar/CubeDots) - Renders alignment patterns in a 3D grid of dots
 <br>
 
 [![Hex]( images/cube-dots.png)](https://github.com/david-hagar/CubeDots)
