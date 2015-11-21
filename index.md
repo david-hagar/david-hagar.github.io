@@ -1,6 +1,6 @@
-#Home
-
 ---
+title: Links Hub
+layout: post
 ---
 
 
