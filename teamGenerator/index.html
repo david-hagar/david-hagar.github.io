@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<body style="color:white;background-color:black">
+  <div>
+    <h1>Team Generator</h1>
+    <p>Team Members</p>
+    <textarea id="teamMembers" rows="10" cols="50" style="color:white;background-color:black">
+Kimberly
+Michael
+Kai
+David
+Mari
+  </textarea>
+    <br>
+    Team Size <input id="teamSize" type='text' value="2" size="3"></input>
+    <br><br>
+    <button onclick="generate()">Generate</button>
+    <br>
+
+    <p>Output Teams (tab delimited so can paste into spreadsheet)</p>
+    <textarea id="outputTeams" rows="100" cols="50" style="color:white;background-color:black">Empty</textarea>
+
+  </div>
+
+  <script>
+    function getMembers() {
+      teamMembersText = document.getElementById('teamMembers');
+      const membersList = teamMembersText.value.trim().split(/\r?\n/);
+      for (var i = 0; i < membersList.length; i++) {
+        membersList[i] = membersList[i].trim();
+      }
+
+      return membersList;
+    }
+
+    function getTeamSize() {
+      return parseInt(document.getElementById('teamSize').value);
+    }
+
+    function teamToString(list) {
+      const out = [];
+      for (const row of list) {
+        out.push(row.join("\t"));
+      }
+      return out.join("\n");
+    }
+
+    function showTeams(teams) {
+      outText = document.getElementById('outputTeams');
+      outText.value = teamToString(teams);
+    }
+
+
+    function combinations(input, choose) {
+      const result = [];
+      result.length = choose; // size of combinations generated
+      const resultList = [];
+
+      function combine(input, len, start) {
+        if (len === 0) {
+          //console.log( result ); //process here the result
+          resultList.push([...result]);
+          return;
+        }
+        for (let i = start; i <= input.length - len; i++) {
+          result[result.length - len] = input[i];
+          combine(input, len - 1, i + 1);
+        }
+      }
+      combine(input, result.length, 0);
+      return resultList
+    }
+
+    function testCombine() {
+      const array = ["apple", "banana", "lemon", "mango"];
+      reslist = combinations(array, 3);
+      console.log(reslist);
+    }
+
+    function shuffle(array) {
+      let currentIndex = array.length,
+        randomIndex;
+
+      // While there remain elements to shuffle.
+      while (currentIndex != 0) {
+
+        // Pick a remaining element.
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [
+          array[randomIndex], array[currentIndex]
+        ];
+      }
+
+      return array;
+    }
+
+    function hasCommon(array1, array2) {
+      for (var i = 0; i < array1.length; i++)
+        for (var j = 0; j < array2.length; j++)
+          if (array1[i] === array2[j])
+            return true;
+      return false;
+    }
+
+    function order(list) {
+      for (var i = 0; i < list.length - 1; i++)
+        if (hasCommon(list[i], list[i + 1])) {
+          for (var j = i + 2; j < list.length; j++)
+            if (!hasCommon(list[i], list[j])) {
+              const tmp = list[i + 1]; // swap
+              list[i + 1] = list[j];
+              list[j] = tmp;
+              break;
+            }
+        }
+    }
+
+
+    function generate() {
+      //testCombine();
+      const membersList = getMembers();
+
+
+      const teams = combinations(membersList, getTeamSize());
+      shuffle(teams);
+      order(teams);
+      showTeams(teams);
+      // console.log(teams);
+      // console.log(hasCommon(teams[0], teams[1]));
+    }
+
+    generate();
+  </script>
+
+</body>
+
+</html>
